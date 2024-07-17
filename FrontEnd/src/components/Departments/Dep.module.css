@@ -1,0 +1,94 @@
+/* Dep.module.css */
+
+.container {
+  display: flex;
+  background-color: #E6E6DC;
+  height: 100vh;
+}
+
+.sidebar {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background-color: #81A594;
+  text-align: center;
+  padding: 20px;
+}
+
+.sidebar h3 {
+  margin-bottom: 50px;
+  color: black;
+}
+
+.sidebar ul {
+  
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  background-color:#00628B;
+  border-radius: 40px;
+  color: white;
+  align-items: center;
+  width:100%;
+  height: 50px;
+  margin-bottom: 0px;
+  margin-top: 30px;
+  padding-top: 0px;
+  transition: background-color 0.3s ease;
+}
+.sidebar li:hover {
+  background-color: #004366; /* Change background color on hover */
+}
+.sidebar li a {
+  display: flex; /* Use flexbox to align content centrally */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  width: 100%;
+  height: 100%;
+  color: white; /* Ensure text color is white */
+  text-decoration: none; /* Remove underline from links */
+  border-radius: 40px; /* Ensure anchor inherits border-radius */
+  transition: background-color 0.3s ease;
+}
+.sidebar a {
+  text-decoration: none;
+  color: inherit;
+}
+.departmentDetails{
+  margin-top: 100px;
+  margin-left:400px;
+  margin-right: 340px;
+}
+.rightSidebar{
+  position: absolute;
+  height: 100vh;
+  width: 300px;
+  margin-left: 1050px;
+  background-color:#00628B;
+}
+.rightSidebar h2{
+  color: black;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.rightSidebar h3{
+  color: white;
+  text-align: center;
+  margin-top: 30px;
+}
+.rightSidebar img {
+  display: block;
+  margin-left: 90px;
+  height: 100px;
+  width: 100px; /* Center the image */
+  border-radius: 50%; /* Make the image rounded */
+  margin-bottom: 20px; /* Add bottom margin */
+}
+.rightSidebar p{
+  color: black;
+  margin-left: 20px;
+  margin-top: 70px;
+}

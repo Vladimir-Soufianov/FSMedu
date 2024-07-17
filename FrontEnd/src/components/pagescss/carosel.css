@@ -1,0 +1,33 @@
+/* Custom styles for slick carousel buttons */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 20px;
+}
+
+.slick-prev {
+  right: 20px; /* Adjust the distance from the right side */
+}
+
+.slick-next {
+  right: 20px; /* Adjust the distance from the right side */
+}
+
+.slick-prev::before,
+.slick-next::before {
+  content: '\2039'; /* Unicode character for left arrow */
+  font-family: 'Arial', sans-serif; /* Specify a font family for the arrow */
+}
+
+.slick-next::before {
+  content: '\203A'; /* Unicode character for right arrow */
+}

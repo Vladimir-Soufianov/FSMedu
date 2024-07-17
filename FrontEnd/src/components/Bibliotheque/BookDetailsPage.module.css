@@ -1,0 +1,168 @@
+/* Reset margin and padding for the body and html */
+body, html {
+    height: 100%;
+}
+
+/* Ensure the main container starts from the top and takes up the full height */
+.mainContainer {
+    display: flex;
+    height: 100%;
+}
+
+
+/* Styles for the book details section */
+.container {
+    width: 75%;
+   color: white; 
+    min-height: 700px;
+    background-color:#587058; 
+    display: flex;
+    flex-direction: column;
+    padding: 20px; /* Add padding for inner spacing */
+    margin: 0;
+    padding-top: 0;
+    box-sizing: border-box;
+}
+
+/* Styles for the comments form */
+.cmmnts {
+    padding-top: 100px;
+    color: white;
+
+    background-color:#E86850; /* Background color for the comments form */
+    width: 25%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.cmmnts h2 {
+    margin-top: 40px;
+    font-size: 30px;
+    width: 500px;
+}
+
+.cmmnts label {
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.cmmnts input[type="text"],
+.cmmnts textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.cmmnts button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cmmnts button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Styles for the comments section */
+.commentsSection {
+    width: 75%;
+    padding: 20px;
+    color: black !important ;
+    margin-left: 50px; /* Adjust margin */
+    margin-top: 90px;
+    box-sizing: border-box;
+    border: 1px solid #ccc; /* Add border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
+    border-radius: 10px; /* Add border radius */
+    background-color: #fff; /* Set background color */
+}
+
+.commentList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.commentItem {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.commentIcon {
+    font-size: 2rem;
+    margin-right: 15px;
+    color: #555;
+}
+
+.commentContent {
+    background-color: #f9f9f9;
+    padding: 10px 15px;
+    border-radius: 5px;
+    flex: 1;
+    border: 1px solid #ddd; /* Add border to comment content */
+}
+
+.commentContent p {
+    margin: 0;
+    padding: 0;
+}
+
+.commentAuthor {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Additional styles for paragraphs within the book details section */
+.bookDetails p {
+    margin-top: 50px;
+    margin-left: 40px;
+}
+.detaiooo{
+    margin-right: 90px;
+   padding-left: 1px;
+   padding-bottom: 100px;
+    border: 1px solid black;
+}
+.bookDetails h2{
+    margin-top: 40px;
+    margin-left: 130px;
+}.bookDetails button{
+    margin-top: 30px;
+    margin-left: 40px;
+}
+.bookDetails{
+    height: 90%;
+    width: 100%;
+}
+
+
+
+.imgContainer {
+    border: 1px black solid;
+    width: 250px; /* Set fixed width */
+    height: 250px; /* Set fixed height */
+    margin-right: 10px; 
+    margin-left: 40px;
+    margin-top: 70px;
+}
+
+.imgFluid {
+    width: 100%; /* Ensure image fills container */
+    height: 100%; /* Ensure image fills container */
+    object-fit: cover; /* Maintain aspect ratio and cover container */
+    border-radius: 5px; /* Add border radius */
+}
+
+

@@ -1,0 +1,202 @@
+body {
+  overflow-x: hidden; /* Disable horizontal scrolling */
+}
+.club {
+  background-color: #212529;
+  width: 80%;
+  height: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%; /* Ensure cards span the full width */
+}
+
+.card {
+  width: 300px; /* Adjust width to fit three cards in a row */
+  margin-bottom: 20px; /* Add some margin between cards */
+  background-color: #f9f9f9;
+  height: 300px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding-top: 20px;
+  margin-top: 40px;
+  box-sizing: border-box;
+  margin-right: 100px;
+  margin-left: 60px;
+  text-align: center; /* Center card content */
+}
+
+.cardImage {
+  width: 200px; /* Adjust image size */
+  height: 180px; /* Adjust image size */
+  object-fit: cover; /* Make image round */
+  margin-bottom: 10px;
+  align-content: center;
+}
+
+.cardTitle {
+  font-size: 18px; /* Increase title font size */
+  margin-bottom: 10px; /* Adjust spacing */
+}
+
+.cardButton {
+  font-size: 14px; /* Increase button font size */
+  padding: 8px 16px; /* Adjust button padding */
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.cardButton:hover {
+  background-color: #0056b3;
+}
+
+.down {
+  display: flex;
+  width: 80%; /* Adjust width */
+  height: 225px; /* Add some spacing from the cards */
+}
+
+.rv,
+.brs {
+  background-color: #212529;
+  width: 50%;
+  height: 301px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rv h1,
+.brs h1 {
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.rv p,
+.brs p {
+  text-align: left;
+  margin-left: 10px;
+  color: white;
+  padding-left: 10px;
+  margin-right: 10px;
+}
+
+.qst {
+  border: 1px solid white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 22%;
+  height: 852px;
+  background-color: #212529;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.qst h2 {
+  margin: 0 0 20px 0;
+  font-size: 24px;
+}
+
+.qst form {
+  display: flex;
+  flex-direction: column;
+}
+
+.qst label {
+  margin-bottom: 15px;
+}
+
+.qst input[type="text"],
+.qst textarea {
+  padding: 10px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.qst textarea {
+  height: 140px;
+}
+
+.qst button,
+.rv button,
+.brs button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.qst button:hover {
+  background-color: #0056b3;
+}
+
+.row1 h1 {
+  color: white;
+  text-align: center;
+}
+
+.line {
+  width: 0;
+  height: 300px;
+  border: 2px solid white;
+}
+
+.horizontalLine {
+  width: 100%;
+  height: 5px;
+  background-color: white;
+}
+.navigateButtons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.navigateButton {
+ width: 70px;
+ height: 30px;
+  font-size: 16px; /* Adjust button font size */
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.navigateButton:hover {
+  background-color: #0056b3;
+}
+.navigateButtons {
+  position: absolute;
+  bottom: 20%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+.navigateButton {
+  display: block;
+  margin-bottom: 0px;
+  margin-right: 870px;
+}

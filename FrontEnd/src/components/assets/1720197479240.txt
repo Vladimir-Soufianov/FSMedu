@@ -1,0 +1,6 @@
+1-Entity
+2-Repository
+3-DTO
+4-Mapping
+5-Services
+6-Controller

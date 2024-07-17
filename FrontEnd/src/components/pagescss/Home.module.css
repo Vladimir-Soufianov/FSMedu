@@ -1,0 +1,179 @@
+.details {
+  position: relative; /* Needed for absolute positioning */
+  height: 500px;
+  width: 100%;
+  background: url("../assets/babmensour.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+}
+
+.infos {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%; /* Take 50% of the width of .details */
+  height: 100%; /* Occupy full height of .details */
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.texto {
+  width: 100%;
+  color: black;
+  font-size: 20px;
+  font-weight: bolder;
+  padding: 70px 0;
+}
+
+.button {
+  margin-top: 40px;
+  padding: 10px 20px;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 15px;
+  background-color:#0275d8;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color:cornflowerblue;
+}
+
+.services {
+  height: 50vh; /* 50% of the viewport height */
+  width: 100%;
+  background-color: beige;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .infos {
+    width: 60%; /* Adjust width for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .infos {
+    width: 80%; /* Adjust width for smaller screens */
+  }
+
+  .details {
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .texto {
+    font-size: 18px;
+  }
+
+  .button {
+    width: auto;
+    padding: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .infos {
+    width: 90%; /* Adjust width for mobile screens */
+    position: static; /* Remove absolute positioning for better stacking */
+    margin: 0 auto; /* Center .infos */
+    height: auto; /* Adjust height for content */
+  }
+
+  .details {
+    display: block;
+    height: auto;
+  }
+
+  .texto {
+    font-size: 16px;
+  }
+
+  .button {
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+/*
+.numbers {
+  background-color:cornflowerblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.numbers_item {
+  color: white;
+  text-align: center;
+  flex: 1;
+}
+
+.centerItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.numbers_item:not(:last-child) {
+  border-right: 1px solid #ccc;
+}
+
+.numbers_item p{
+  font-size: 50px;  
+}
+*/
+.numbers {
+  background-color: cornflowerblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.numbers_item {
+  text-align: center;
+  flex: 1;
+}
+
+.centerItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Add border to the right of each item except for the last one */
+.numbers_item:not(:last-child) {
+  border-right: 1px solid #ccc;
+}
+
+/* Style for the number to make it bigger */
+.numbers_item p {
+  font-size: 50px; /* Adjust font size as needed */
+}
+
+/* Style for the headings */
+.numbers_item h3 {
+  margin-top: 5px; /* Add spacing between number and heading */
+  font-size: 18px; /* Adjust font size as needed */
+}
+

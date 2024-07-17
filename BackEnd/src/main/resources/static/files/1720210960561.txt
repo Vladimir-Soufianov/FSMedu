@@ -1,0 +1,14 @@
+setTimeout(() => {
+          setLoading(false);
+        }, 3000); 
+//inside the useeffect 
+
+if (isLoading) {
+    return (
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+        <img src={loadingIcon} alt="Loading Icon" style={{ width: '100px', height: '100px', marginRight: '20px' }} />
+        <div style={spinnerStyle}></div>
+      </div>
+    );
+  }
+//return the componnent whatever

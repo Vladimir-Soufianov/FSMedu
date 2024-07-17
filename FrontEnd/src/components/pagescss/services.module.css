@@ -1,0 +1,99 @@
+.container {
+    height: 700px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns layout */
+    grid-template-rows: 1fr 1fr auto; /* Added an extra row for the long rectangle */
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+    margin-top: -5px;
+    margin-bottom: 20px;
+  }
+  
+  .parallelogram1,
+  .parallelogram2{
+    width: 500px;
+    height: 200px;
+    position: relative;
+    border-radius: 100px  20px 100px 20px;
+    overflow: hidden;
+    transition: width 0.5s ease, height 0.5s ease;
+    margin-top: -60px;
+  }
+  .parallelogram3,
+  .parallelogram4 {
+    width: 500px;
+    height: 200px;
+    position: relative;
+    border-radius: 100px  20px 100px 20px;
+    overflow: hidden;
+    transition: width 0.5s ease, height 0.5s ease;
+    margin-top: -260px;
+  }
+  
+  .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5; /* Adjust the opacity as needed */
+  }
+  .line {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 60px; /* Adjust the height as needed */
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5); 
+    z-index: 1; /* Ensure the line appears above the image */
+  }
+  
+  .image {
+    position: relative;
+    z-index: 0; /* Ensure the image appears below the line */
+  }
+  .line h1{
+    text-align: center;
+  }
+
+.container a{
+    text-decoration: none;
+    color: black ;
+}
+.parallelogram1:hover,
+.parallelogram2:hover,
+.parallelogram3:hover,
+.parallelogram4:hover {
+  width: 600px; /* Increase width */
+  height: 200px; /* Increase height */
+}
+  
+  
+.parallelogram5 {
+  width: 1000px;
+  height: 120px;
+  border-radius: 100px  20px 100px 20px;
+  overflow: hidden;
+  transition: width 0.5s ease, height 0.5s ease;
+  grid-column: span 2; /* Span across two columns */
+  justify-self: center; /* Center horizontally */
+  position: relative; /* Ensure relative positioning */
+  margin-top: -220px;
+}
+
+.parallelogram5:hover {
+  width: 1100px; /* Increase width */
+  height: 140px; /* Increase height */
+}
+
+.longimage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5; /* Adjust the opacity as needed */
+}

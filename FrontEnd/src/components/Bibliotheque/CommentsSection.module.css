@@ -1,0 +1,15 @@
+/* CommentsSection.module.css */
+
+.commentsSection {
+    margin-top: 30px;
+  }
+  
+  .commentList {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .commentItem {
+    margin-bottom: 10px;
+  }
+  

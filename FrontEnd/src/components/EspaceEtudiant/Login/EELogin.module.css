@@ -1,0 +1,37 @@
+.booody {
+    position: absolute;
+    width: 100%;
+    background: url("../../assets/EEbg.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+    background-color: #91C3DC; /* Background color of the booody */
+    height: 90.4vh; /* Set height to fill the viewport */
+    display: flex; /* Ensure contents are vertically centered */
+    justify-content: center; /* Horizontally center contents */
+}
+
+.formulaire {
+    background-color:    #CCCCCC;
+    padding-top: 40px;
+    border: 2px solid black; /* Add border */
+    border-radius: 70px 30px 70px 30px; /* Restoring border-radius */
+    width: 700px;
+    margin-top: 150px; /* Adjust margin-top as needed */
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    color: white;
+}
+
+.formulaire h3 {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    margin-left: 250px;
+    width: 200px;
+}
+
+.butona {
+   margin-left: 30px;
+    margin-top: 50px;
+}
+
